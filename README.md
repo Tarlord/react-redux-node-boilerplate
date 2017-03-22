@@ -1,0 +1,1 @@
+Empty boilerplate for react with redux and dmapper server
