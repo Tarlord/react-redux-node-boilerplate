@@ -1,5 +1,5 @@
 const initialState = {
-	flag: true
+  flag: true
 }
 
 export default function testReducers (state = initialState, action) {

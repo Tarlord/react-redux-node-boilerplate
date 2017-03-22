@@ -6,6 +6,8 @@ import mainRoutes from '../main/Routes'
 const ROOT_PATH = process.cwd()
 const TMP_PATH = ROOT_PATH + '/tmp'
 
+import api from './api'
+
 export default function (done) {
 	reactServer({
 		appRoutes: {
@@ -19,6 +21,7 @@ export default function (done) {
 		})
 
 		ee.on('routes', (expressApp) => {
+      expressApp.use(api)
 			//	Express.use server routes here when we will have ones
 		})
 
